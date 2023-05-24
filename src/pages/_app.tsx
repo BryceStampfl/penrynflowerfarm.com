@@ -15,7 +15,6 @@ import NavigationHeader from '@/components/NavigationHeader';
 import Contact from '@/components/Contact';
 import { LogoHeader } from '@/components/LogoHeader';
 
-
 const inter = Caveat({
     subsets: ['latin']
 });

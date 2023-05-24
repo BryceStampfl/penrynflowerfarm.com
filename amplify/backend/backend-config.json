@@ -33,6 +33,11 @@
       "serviceType": "imported",
       "providerPlugin": "awscloudformation",
       "dependsOn": []
+    },
+    "s345497c42": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
     }
   },
   "api": {
