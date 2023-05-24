@@ -1,0 +1,16 @@
+{
+  "resourceName": "flowerStorage",
+  "policyUUID": "9c117512",
+  "bucketName": "penrynflowerfarmcom94095cd5e99f4939bd04947faacb",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
