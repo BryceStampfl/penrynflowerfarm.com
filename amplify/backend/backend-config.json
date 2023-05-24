@@ -63,8 +63,9 @@
     }
   },
   "storage": {
-    "flowerStorage": {
+    "penrynflowerfarmcom976a4f90": {
       "service": "S3",
+      "serviceType": "imported",
       "providerPlugin": "awscloudformation",
       "dependsOn": []
     }

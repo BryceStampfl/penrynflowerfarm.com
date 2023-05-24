@@ -1,5 +1,7 @@
 import { Caveat } from 'next/font/google';
 import { Playball } from '@next/font/google'
+import { Roboto } from 'next/font/google';
+
 
 import type { AppProps } from 'next/app';
 import { ChakraProvider, Center } from '@chakra-ui/react';
@@ -21,6 +23,10 @@ export const PlayballFont = Playball({
     weight: ['400'],
 });
 
+export const RobotoFont = Roboto({
+    subsets: ['latin'],
+    weight: ['100', '300', '400', '500', '700', '900']
+});
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
     return (
