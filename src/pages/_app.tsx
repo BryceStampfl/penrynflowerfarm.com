@@ -4,7 +4,10 @@ import { Roboto } from 'next/font/google';
 
 
 import type { AppProps } from 'next/app';
-import { ChakraProvider, Center } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
+// import { Amplify, Storage } from 'aws-amplify';
+// import awsconfig from '../aws-exports';
+// Amplify.configure(awsconfig);
 
 
 
@@ -13,7 +16,6 @@ import Contact from '@/components/Contact';
 import { LogoHeader } from '@/components/LogoHeader';
 
 
-// If loading a variable font, you don't need to specify the font weight
 const inter = Caveat({
     subsets: ['latin']
 });
