@@ -32,3 +32,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+"amplify status" will show you what you've added already and if it's locally configured or deployed
+"amplify add <category>" will allow you to add features like user login or a backend API
+"amplify push" will build all your local backend resources and provision it in the cloud
+"amplify console" to open the Amplify Console and view your project status
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
