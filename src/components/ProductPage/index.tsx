@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, SimpleGrid, Text, Button, Center, Divider } from '@chakra-ui/react'
+import { Box, SimpleGrid, Text, Center, Divider } from '@chakra-ui/react'
 import { ProductCard } from '../Card';
 
 
@@ -21,12 +21,6 @@ const ProductPage = () => {
                         <ProductCard />
                     </SimpleGrid >
                 </Center>
-                <Button
-                    borderRadius={50}
-                    width='auto'
-                    height='auto'
-                    fontSize={'4rem'}
-                    color='white' backgroundColor='#ff9a8a'>View More Flowers</Button>
 
             </Box >
             <Divider />
