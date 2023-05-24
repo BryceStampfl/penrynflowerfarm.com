@@ -9,7 +9,7 @@ export const WelcomeMessage = () => {
     // #DD4B52
 
     return (
-        <Box maxWidth='1280px' textAlign={'center'} >
+        <Box maxWidth='80rem' textAlign={'center'} >
             <Text fontSize={'4.5rem'} color='#ff9a8a' className={PlayballFont.className}>
                 Welcome to Penryn Flower Farm!
             </Text>
