@@ -10,6 +10,20 @@
       "StackName": "amplify-penrynflowerfarmcom-dev-193022",
       "StackId": "arn:aws:cloudformation:us-west-1:497121907672:stack/amplify-penrynflowerfarmcom-dev-193022/efda47c0-f9da-11ed-a8c7-02257a0d0423",
       "AmplifyAppId": "d4csq7xv9hmh9"
+    },
+    "categories": {
+      "auth": {
+        "penrynflowerfarmcome9b8537e": {}
+      },
+      "storage": {
+        "penrynflowerfarmcom6a945f81": {
+          "bucketName": "penrynflowerfarmbucket195050-staging",
+          "region": "us-west-1"
+        }
+      },
+      "api": {
+        "penrynflowerfarmcom": {}
+      }
     }
   }
 }
