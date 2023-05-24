@@ -12,11 +12,9 @@ export const HomeCard = () => {
                     alt='Green double couch with wooden legs'
                     borderRadius='lg'
                 />
-                <Stack mt='1' spacing='3'>
-                    <Text fontSize={'2rem'} fontWeight={'500'}>Living room Sofa</Text>
-                    <Text color='#DD4B52' fontSize='2xl'>
-                        $450
-                    </Text>
+                <Stack spacing='0'>
+                    <Text fontSize={'2rem'} fontWeight={'500'}>Flower Example</Text>
+                    <Text color='#DD4B52' fontSize='2xl'>$450</Text>
                 </Stack>
             </CardBody>
         </Card>

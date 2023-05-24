@@ -3,6 +3,7 @@ import ImageWidget from '@/components/ImageWidget';
 import HomeProducts from '@/components/ProductPage/HomeProducts';
 import { WelcomeMessage } from '@/components/WelcomeMessage';
 import { Center, Box, Flex, Image, Text } from '@chakra-ui/react'
+import IconWidgetTray from "@/components/IconWidgetTray"
 
 const Home = () => {
     return (
@@ -39,6 +40,8 @@ const Home = () => {
                         </Box>
 
                     </Flex>
+                    <IconWidgetTray />
+
                     <ImageWidget />
                     <HomeProducts />
 

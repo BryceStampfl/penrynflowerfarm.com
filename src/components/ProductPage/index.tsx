@@ -12,7 +12,7 @@ const ProductPage = () => {
                     Flower Bouquets                </Text>
 
                 <Center>
-                    <SimpleGrid columns={[1, 1, 3, 3, 4]} spacing={2}>
+                    <SimpleGrid columns={[1, 1, 3, 3, 4]} spacing={2} maxWidth={'80rem'} >
                         <ProductCard />
                         <ProductCard />
                         <ProductCard />
@@ -21,7 +21,6 @@ const ProductPage = () => {
                         <ProductCard />
                     </SimpleGrid >
                 </Center>
-
             </Box >
             <Divider />
         </>

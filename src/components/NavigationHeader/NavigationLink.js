@@ -16,7 +16,7 @@ const NavigationLink = ({ name, to, active, setActive }) => {
             >
                 <Text
                     // #f6c492 peach
-                    color={name == active ? '#ff9a8a' : '#737373'}
+                    color={to == active ? '#ff9a8a' : '#737373'}
                     fontSize={'1.75rem'}
                     fontWeight={'thin'}
                 >{name}</Text>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRouter } from "next/router";
 import { Box, Button, Center, Flex } from '@chakra-ui/react'
 import { Squash } from 'hamburger-react'
 import NavigationLink from './NavigationLink'
@@ -21,8 +22,10 @@ const NavigationHeader = () => {
         setActive(name)
     }
 
+    const router = useRouter();
+
     return (
-        <Box mx='auto' marginBlock={'auto'}>
+        <Box mx='auto' paddingTop={['auto']} >
             <Box id='navbar' >
                 <Center>
                     <Button
@@ -43,20 +46,18 @@ const NavigationHeader = () => {
 
                 <Box
                     display={[navbarOpen ? 'block' : 'none', 'block']}
+                    pt={['2rem', '0rem', '1rem', '5rem', '8rem',]}
                 >
                     <Center>
                         <Flex id='flex'
                             background={'white'}
                             borderRadius={50}
                             px={6}
-                            // border='1px red solid'
-
-                            // display={'inline-flex'}
                             justifyContent={'center'}
                             direction={['column', 'row']}
                         >
                             {navData.map((data) => (
-                                <NavigationLink key={data.name} name={data.name} to={data.to} active={active} setActive={linkPressed} />
+                                <NavigationLink key={data.name} name={data.name} to={data.to} active={router.pathname} setActive={linkPressed} />
                             ))}
                         </Flex>
                     </Center>
@@ -64,7 +65,7 @@ const NavigationHeader = () => {
                 </Box>
             </Box>
             <Jumbotron />
-        </Box>
+        </Box >
 
     )
 

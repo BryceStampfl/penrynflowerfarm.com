@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, SimpleGrid, Text, Button, Center, Divider } from '@chakra-ui/react'
 import { HomeCard } from '../Card/HomeCard';
-
+import Link from 'next/link';
 
 const HomeProducts = () => {
     return (
@@ -24,12 +24,17 @@ const HomeProducts = () => {
                         <HomeCard />
                     </SimpleGrid >
                 </Center>
-                <Button mt='1rem'
-                    borderRadius={50}
-                    width='auto'
-                    height='auto'
-                    fontSize={'3rem'}
-                    color='white' backgroundColor='#ff9a8a'>View More Flowers</Button>
+
+                <Link href={'/flowers/page'}>
+                    <Button mt='1rem'
+                        borderRadius={50}
+                        width='auto'
+                        height='auto'
+                        fontSize={'3rem'}
+                        color='white' backgroundColor='#ff9a8a'>View More Flowers
+                    </Button>
+                </Link>
+
 
             </Box >
             <Divider />

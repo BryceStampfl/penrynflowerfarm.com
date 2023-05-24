@@ -12,7 +12,7 @@ export const ProductCard = () => {
                     alt='Green double couch with wooden legs'
                     borderRadius='lg'
                 />
-                <Stack mt='1' spacing='3'>
+                <Stack mt='1' spacing='2'>
                     <Text fontSize={'2rem'} fontWeight={'500'}>Living room Sofa</Text>
                     <Text color='#DD4B52' fontSize='2xl'>
                         $450
