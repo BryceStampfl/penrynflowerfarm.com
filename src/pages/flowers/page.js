@@ -2,6 +2,7 @@
 
 import ProductPage from '@/components/ProductPage';
 
-export default () => {
+const Flower = () => {
     return (<ProductPage />)
 }
+export default Flower

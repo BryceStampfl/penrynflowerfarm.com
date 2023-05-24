@@ -1,7 +1,5 @@
 import React from 'react'
-import { Box, Text, Button } from '@chakra-ui/react'
-import { Center, Container, Flex, Image } from '@chakra-ui/react'
-
+import { Box, Button, Center, Flex } from '@chakra-ui/react'
 import { Squash } from 'hamburger-react'
 import NavigationLink from './NavigationLink'
 import { Jumbotron } from '../Jumbotron'
@@ -58,7 +56,7 @@ const NavigationHeader = () => {
                             direction={['column', 'row']}
                         >
                             {navData.map((data) => (
-                                <NavigationLink name={data.name} to={data.to} active={active} setActive={linkPressed} />
+                                <NavigationLink key={data.name} name={data.name} to={data.to} active={active} setActive={linkPressed} />
                             ))}
                         </Flex>
                     </Center>
