@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Box, SimpleGrid, Text, Center, Divider } from '@chakra-ui/react'
+import { Box, SimpleGrid, Text, Center, Divider, Flex } from '@chakra-ui/react'
 import { ProductCard } from '../Card';
-
+import HorizontalCard from '../Card/HorizontalCard'
 
 const ProductPage = () => {
     return (
@@ -12,14 +12,24 @@ const ProductPage = () => {
                     Flower Bouquets                </Text>
 
                 <Center>
-                    <SimpleGrid columns={[1, 1, 3, 3, 4]} spacing={2} maxWidth={'80rem'} >
+                    <Flex direction={'column'}>
+
+                        <HorizontalCard />
+                        <HorizontalCard />
+
+                        <HorizontalCard />
+                        <HorizontalCard />
+                        <HorizontalCard />
+                        <HorizontalCard />
+                    </Flex>
+                    {/* <SimpleGrid columns={[1, 1, 3, 3, 3]} spacing={2} maxWidth={'50rem'} >
                         <ProductCard />
                         <ProductCard />
                         <ProductCard />
                         <ProductCard />
                         <ProductCard />
                         <ProductCard />
-                    </SimpleGrid >
+                    </SimpleGrid > */}
                 </Center>
             </Box >
             <Divider />

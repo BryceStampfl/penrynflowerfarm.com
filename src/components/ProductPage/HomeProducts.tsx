@@ -12,7 +12,7 @@ const HomeProducts = () => {
                     Flower Bouquets                </Text>
 
                 <Center>
-                    <SimpleGrid columns={[1, 2, 3, 4, 4]} spacing={2}>
+                    <SimpleGrid columns={[1, 2, 3, 3, 4]} spacing={2}>
                         <HomeCard />
                         <HomeCard />
                         <HomeCard />
@@ -20,8 +20,6 @@ const HomeProducts = () => {
                         <HomeCard />
                         <HomeCard />
 
-                        <HomeCard />
-                        <HomeCard />
                     </SimpleGrid >
                 </Center>
 
