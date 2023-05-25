@@ -39,7 +39,9 @@
     "src/pages/_app.js",
     "src/pages/flowers.js",
     "src/components/NavigationHeader/NavigationLink.js",
-    "src/pages/flowers/page.js"
+    "src/pages/flowers/page.js",
+    "src/components/LogoHeader/index.js",
+    "src/components/IconWidgetTray/index.js"
   ],
   "exclude": [
     "node_modules"

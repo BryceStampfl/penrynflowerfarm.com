@@ -33,14 +33,9 @@
       "providerPlugin": "awscloudformation",
       "service": "S3"
     },
-    "penrynflowerfarmcom6a945f81": {
+    "penrynflowerfarmcom068a1e6e": {
       "service": "S3",
       "serviceType": "imported",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": []
-    },
-    "s345497c42": {
-      "service": "S3",
       "providerPlugin": "awscloudformation",
       "dependsOn": []
     }

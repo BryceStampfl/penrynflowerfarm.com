@@ -15,15 +15,14 @@
       "auth": {
         "penrynflowerfarmcome9b8537e": {}
       },
-      "storage": {
-        "penrynflowerfarmcom6a945f81": {
-          "bucketName": "penrynflowerfarmbucket195050-staging",
-          "region": "us-west-1"
-        },
-        "s345497c42": {}
-      },
       "api": {
         "penrynflowerfarmcom": {}
+      },
+      "storage": {
+        "penrynflowerfarmcom068a1e6e": {
+          "bucketName": "penrynflowerfarmbucket195050-staging",
+          "region": "us-west-1"
+        }
       }
     }
   }

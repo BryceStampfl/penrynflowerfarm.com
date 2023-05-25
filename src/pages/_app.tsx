@@ -2,12 +2,14 @@ import { Caveat } from 'next/font/google';
 import { Playball } from '@next/font/google'
 import { Roboto } from 'next/font/google';
 
+import { Amplify, Storage } from 'aws-amplify';
+import awsconfig from '../aws-exports';
+Amplify.configure(awsconfig);
+
 
 import type { AppProps } from 'next/app';
 import { ChakraProvider } from '@chakra-ui/react';
-// import { Amplify, Storage } from 'aws-amplify';
-// import awsconfig from '../aws-exports';
-// Amplify.configure(awsconfig);
+
 
 
 
