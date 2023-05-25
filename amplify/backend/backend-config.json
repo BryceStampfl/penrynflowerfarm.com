@@ -28,6 +28,11 @@
     }
   },
   "storage": {
+    "bucket": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    },
     "penrynflowerfarmcom6a945f81": {
       "service": "S3",
       "serviceType": "imported",
