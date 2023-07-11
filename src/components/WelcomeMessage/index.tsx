@@ -1,7 +1,6 @@
 
 import { Box, Divider, Text } from "@chakra-ui/react"
 
-import { PlayballFont } from "@/pages/_app"
 import { RobotoFont } from "@/pages/_app"
 
 export const WelcomeMessage = () => {
@@ -10,7 +9,10 @@ export const WelcomeMessage = () => {
 
     return (
         <Box maxWidth='80rem' textAlign={'center'} >
-            <Text fontSize={'4.5rem'} color='#ff9a8a' className={PlayballFont.className}>
+            <Text fontSize={'4.5rem'} color='#ff9a8a'
+            // className={PlayballFont.className}
+            >
+
                 Welcome to Penryn Flower Farm!
             </Text>
             <Text className={RobotoFont.className} fontSize={'1.5rem'} textAlign={'center'} fontStyle={'italic'} color={'#737373'}>

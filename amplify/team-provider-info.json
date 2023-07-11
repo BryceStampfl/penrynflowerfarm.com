@@ -19,10 +19,8 @@
         "penrynflowerfarmcom": {}
       },
       "storage": {
-        "penrynflowerfarmcom068a1e6e": {
-          "bucketName": "penrynflowerfarmbucket195050-staging",
-          "region": "us-west-1"
-        }
+        "penrynflowerfarmcombucket": {},
+        "bucket": {}
       }
     }
   }

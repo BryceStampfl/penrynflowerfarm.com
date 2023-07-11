@@ -36,12 +36,13 @@
     ".next/types/**/*.ts",
     "src/components/NavigationHeader/index.js",
     "src/public/index.js",
-    "src/pages/_app.js",
+    "src/pages/_app.tsxx",
     "src/pages/flowers.js",
     "src/components/NavigationHeader/NavigationLink.js",
     "src/pages/flowers/page.js",
     "src/components/LogoHeader/index.js",
-    "src/components/IconWidgetTray/index.js"
+    "src/components/IconWidgetTray/index.js",
+    "src/components/admin/index.js"
   ],
   "exclude": [
     "node_modules"

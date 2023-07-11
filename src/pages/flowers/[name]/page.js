@@ -1,9 +1,8 @@
-import { useRouter } from 'next/router';
+import SingleProductPage from '@/components/SingleProductPage'
 
 const FlowerID = () => {
-    const router = useRouter();
     return (
-        <p>Post: {router.query.slug}</p>
+        <SingleProductPage />
     )
 }
 export default FlowerID

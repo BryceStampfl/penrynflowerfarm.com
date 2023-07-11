@@ -3,19 +3,19 @@ import { useRouter } from "next/router";
 import { Box, Button, Center, Flex } from '@chakra-ui/react'
 import { Squash } from 'hamburger-react'
 import NavigationLink from './NavigationLink'
-import { Jumbotron } from '../Jumbotron'
 
-const NavigationHeader = () => {
+
+export const NavBar = () => {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
     const [active, setActive] = React.useState('Home')
 
     const navData = [
-        { name: 'Home', to: '/' },
-        { name: 'Flowers', to: '/flowers/page' },
-        { name: 'Subscription', to: '/subscription/page' },
-        { name: 'Gift Cards', to: '/giftcards/page' },
-        { name: 'About', to: '/about/page' },
-        { name: 'Cart', to: '/cart/page' }
+        { name: 'HOME', to: '/' },
+        { name: 'FLOWERS', to: '/flowers/page' },
+        { name: 'SUBSCRIPTION', to: '/subscription/page' },
+        { name: 'GIFT CARDS', to: '/giftcards/page' },
+        { name: 'ABOUT', to: '/about/page' },
+        { name: 'CART', to: '/cart/page' }
     ];
 
     const linkPressed = (name) => {
@@ -25,8 +25,9 @@ const NavigationHeader = () => {
 
     const router = useRouter();
 
+
     return (
-        <Box mx='auto' paddingTop={['auto']} >
+        <Box mx='auto' border={['0', '1px']} borderColor='lightgrey' mb='1rem' maxW='80rem' >
             <Box id='navbar' >
                 <Center>
                     <Button
@@ -38,6 +39,7 @@ const NavigationHeader = () => {
                     >
                         <Squash
                             color='black'
+                            backgroundColor='#fafafa'
                             toggled={navbarOpen}
                             label="Show menu"
                             size={16}
@@ -47,13 +49,9 @@ const NavigationHeader = () => {
 
                 <Box
                     display={[navbarOpen ? 'block' : 'none', 'block']}
-                    pt={['2rem', '0rem', '1rem', '5rem', '8rem',]}
                 >
                     <Center>
                         <Flex id='flex'
-                            background={'white'}
-                            borderRadius={50}
-                            px={6}
                             justifyContent={'center'}
                             direction={['column', 'row']}
                         >
@@ -65,13 +63,8 @@ const NavigationHeader = () => {
 
                 </Box>
             </Box>
-            <Jumbotron />
         </Box >
 
     )
-
 }
-export default NavigationHeader
-
-
-
+export default NavBar

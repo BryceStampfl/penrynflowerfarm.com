@@ -26,7 +26,7 @@ const awsmobile = {
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
     ],
-    "aws_user_files_s3_bucket": "penrynflowerfarmbucket195050-staging",
+    "aws_user_files_s3_bucket": "penrynflowerfarmbucket193022-dev",
     "aws_user_files_s3_bucket_region": "us-west-1",
     "aws_appsync_graphqlEndpoint": "https://2qdtwrhx3vgpdacpmxg62swjge.appsync-api.us-west-1.amazonaws.com/graphql",
     "aws_appsync_region": "us-west-1",

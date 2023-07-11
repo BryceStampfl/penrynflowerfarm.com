@@ -10,6 +10,12 @@ export type AmplifyDependentResourcesAttributes = {
             "AppClientID": "string"
         }
     },
+    "storage": {
+        "penrynflowerfarmcombucket": {
+            "BucketName": "string",
+            "Region": "string"
+        }
+    },
     "api": {
         "penrynflowerfarmcom": {
             "GraphQLAPIKeyOutput": "string",
