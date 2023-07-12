@@ -1,5 +1,5 @@
 
-import Admin from '@/components/Admin';
+import Admin from '@/components/admin';
 
 const AdminPage = () => {
     return (<Admin />)
