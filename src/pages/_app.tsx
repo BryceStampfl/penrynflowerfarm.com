@@ -32,6 +32,7 @@ export const RobotoFont = Roboto({
 });
 
 export interface GraphQLResult {
+    listProducts: any;
     data?: {
         listProducts: {
             data: object

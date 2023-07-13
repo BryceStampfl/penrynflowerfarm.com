@@ -6,7 +6,7 @@ const Subscription = () => {
     return (
         <Box maxWidth={['80rem']} mx={['0', 'auto']} >
 
-            {/* <Box backgroundColor='' >
+            <Box backgroundColor='' >
                 <Center>
                     <Text fontSize={'4rem'} color='#ff9a8a'>{"Subscription"}</Text>
 
@@ -39,7 +39,7 @@ const Subscription = () => {
 
                     </Box>
                 </Flex>
-            </Box> */}
+            </Box>
 
         </Box >
 
