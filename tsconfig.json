@@ -43,7 +43,9 @@
     "src/components/LogoHeader/index.js",
     "src/components/IconWidgetTray/index.js",
     "src/components/admin/index.js",
-    "src/components/Home/HomeProducts.js"
+    "src/components/Home/HomeProducts.js",
+    "src/pages/_app.js",
+    "src/components/ProductPage/index.js"
   ],
   "exclude": [
     "node_modules"

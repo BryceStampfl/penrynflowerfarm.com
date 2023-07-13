@@ -29,16 +29,21 @@ const JumbotronImageOverlay = () => {
                     >
                         <Image
                             maxW={'15rem'}
+                            alt='img'
                             src='IMG_0164.jpg'
                         />
                         <Image
                             maxW={'15rem'}
                             src='IMG_0149.jpg'
+                            alt='img'
+
 
                         />
                         <Image
                             maxW={'15rem'}
                             src='IMG_0196.jpg'
+                            alt='img'
+
 
                         />
                     </Flex>

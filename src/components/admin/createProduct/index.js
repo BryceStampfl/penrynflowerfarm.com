@@ -65,9 +65,9 @@ const CreateProduct = ({ fetchProducts }) => {
             </Box>
 
             <Text fontSize={'1.25rem'}>
-                Image: <input type='file' accept="image/png, image/jpeg" alt='' onChange={uploadImage} />
+                Image: <input type='file' accept="image/png, image/jpeg" alt='img' onChange={uploadImage} />
             </Text>
-            <Image boxSize={'40rem'} src={imagePreview} />
+            <Image boxSize={'40rem'} src={imagePreview} alt='img' />
             <Button colorScheme='blue' onClick={createProduct}>Create Product</Button>
         </>
     )

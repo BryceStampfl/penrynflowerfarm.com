@@ -30,6 +30,8 @@ export const LogoHeader = () => {
             <Center>
                 <Image
                     width={['13rem', '20rem']}
+                    alt='logo'
+
                     src='logo2.png'
                 />
             </Center>
