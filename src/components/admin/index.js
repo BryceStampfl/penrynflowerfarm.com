@@ -68,7 +68,7 @@ const Admin = () => {
                         <Heading level={2}>Current Products</Heading>
                         <View margin="3rem 0">
                             {products.map((product) => (
-                                <Listing product={product} deleteProduct={deleteProduct} />
+                                <Listing id={product.id} product={product} deleteProduct={deleteProduct} />
 
                             ))}
                         </View>                    </TabPanel>
