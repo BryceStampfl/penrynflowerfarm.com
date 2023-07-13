@@ -7,7 +7,7 @@ const GiftCards = () => {
     return (
         <Box maxWidth={['80rem']} mx={['0', 'auto']}>
 
-            {/* <Box >
+            <Box >
                 <Center>
                     <Text fontSize={'4rem'} color='#ff9a8a'>{"GiftCards"}</Text>
 
@@ -40,7 +40,7 @@ const GiftCards = () => {
 
                     </Box>
                 </Flex>
-            </Box> */}
+            </Box>
 
         </Box >
     )
