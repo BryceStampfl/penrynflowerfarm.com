@@ -6,14 +6,22 @@ import { inter } from "@/pages/_app"
 type AppProps = {
     title: string;
     src: string;
+    description: string;
 }
 
-export const HomeCard = ({ title, src }: AppProps) => {
+export const HomeCard = ({ title, src, description }: AppProps) => {
 
     return (
         <Card variant={'unstyled'}>
             <CardBody >
-                <Link href={`/flowers/${title}/page`}>
+                <Link href={{
+                    pathname: `/flowers/${title}/page`,
+                    query: {
+                        title: title,
+                        src: src,
+                        description: description
+                    }
+                }}>
                     <Image
                         boxSize={['auto', '15rem']}
                         src={src}

@@ -3,6 +3,7 @@ import HomeProducts from '@/components/Home/HomeProducts';
 import { Center, Box, Flex, Spinner, Text } from '@chakra-ui/react'
 import { Jumbotron } from '@/components/Jumbotron'
 import JumbotronImageOverlay from '../components/Jumbotron/JumbotronImageOverlay';
+import IconWidgetTray from '@/components/IconWidgetTray'
 
 const Home = () => {
 
@@ -13,6 +14,8 @@ const Home = () => {
                     <Jumbotron />
                     <HomeProducts />
                     <JumbotronImageOverlay />
+                    <IconWidgetTray />
+
                 </Box>
             </Center>
         </Box >

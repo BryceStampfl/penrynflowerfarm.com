@@ -14,6 +14,7 @@ import { Box, ChakraProvider } from '@chakra-ui/react';
 import Contact from '@/components/Contact';
 import { Logo } from '@/components/Logo'
 import { NavBar } from '@/components/NavBar'
+import IconWidgetTray from '@/components/IconWidgetTray';
 
 Amplify.configure(awsconfig);
 

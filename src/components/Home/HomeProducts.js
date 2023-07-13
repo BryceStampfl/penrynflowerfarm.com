@@ -13,11 +13,11 @@ const HomeProducts = () => {
 
     return (
         <>
-            <Box textAlign={'center'} mb='1rem' >
+            <Box textAlign={'center'} mb='1rem' borderColor='lightgrey' borderX={['0', '1px']}>
                 <Center>
-                    <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
+                    <SimpleGrid columns={[1, 2, 3, 4]} spacing={5}>
                         {data.map((product) => {
-                            return <HomeCard key={product.name} title={product.name} src={product.imageUrl} />
+                            return <HomeCard key={product.name} title={product.name} src={product.imageUrl} description={product.description} />
                         })}
 
                     </SimpleGrid >

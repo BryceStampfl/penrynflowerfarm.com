@@ -4,7 +4,7 @@ import { Box, Image, Text, Flex, Center, Button, Divider } from "@chakra-ui/reac
 const Subscription = () => {
 
     return (
-        <Box maxWidth={['80rem']} mx={['0', 'auto']} >
+        <Box maxWidth={['80rem']} mx={['0', 'auto']} border={['0', '1px']} borderColor='lightgrey' >
 
             <Box>
                 <Center>
@@ -24,7 +24,7 @@ const Subscription = () => {
 
                     <Box>
                         <Flex>
-                            <Text fontSize={"2rem"}>
+                            <Text fontSize={"1.5rem"}>
                                 Experience the beauty of fresh flowers in your home every month with our stunning flower bouquet
                                 subscription service! Imagine receiving a gorgeous bouquet of hand-selected, seasonal blooms delivered
                                 straight to your doorstep on a regular basis. Whether you&apos;re looking to treat yourself or surprise a
@@ -33,9 +33,10 @@ const Subscription = () => {
                         </Flex>
 
                         <Button variant='solid' fontSize={'2rem'}
-                            backgroundColor={'#ff9a8a'}
+                            backgroundColor={'#405654'}
+                            color='white'
                         >
-                            Buy Flower Bouquet
+                            Purchase Flower Bouquet
                         </Button>
 
                     </Box>

@@ -5,11 +5,11 @@ import { Box, Image, Text, Flex, Center, Button } from "@chakra-ui/react"
 const GiftCards = () => {
 
     return (
-        <Box maxWidth={['80rem']} mx={['0', 'auto']}>
+        <Box maxWidth={['80rem']} mx={['0', 'auto']} border={['0', '1px']} borderColor='lightgrey'>
 
             <Box >
                 <Center>
-                    <Text fontSize={'4rem'} color='#ff9a8a'>{"GiftCards"}</Text>
+                    <Text fontSize={'4rem'} color='#405654'>{"GiftCards"}</Text>
 
                 </Center>
 
@@ -34,10 +34,13 @@ const GiftCards = () => {
                             </Text>
                         </Flex>
 
-                        <Button variant='solid' fontSize={'2rem'}
-                            backgroundColor={'#ff9a8a'}
+                        <Button
+                            variant='solid'
+                            fontSize={'2rem'}
+                            backgroundColor={'#405654'} color={'white'}
+                            mb='1rem'
                         >
-                            Buy Gift Card
+                            Purchase Gift Card
                         </Button>
 
                     </Box>
