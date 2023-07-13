@@ -1,25 +1,24 @@
 import React from 'react';
 
-import { Box, SimpleGrid, Text, Button, Center, Divider } from '@chakra-ui/react'
-import { HomeCard } from '../Home/HomeCard';
+import { Box, SimpleGrid, Button, Center } from '@chakra-ui/react'
+import { HomeCard } from './HomeCard';
 import Link from 'next/link';
+import { DataContext } from '@/pages/_app';
 
 const HomeProducts = () => {
+
+    const data = React.useContext(DataContext)
+    console.log(data)
+    data.length = 6
+
     return (
         <>
             <Box textAlign={'center'} mb='1rem' >
-                {/* <Text fontSize={'4rem'} color='#ff9a8a'>
-                    Flower Bouquets                </Text> */}
-
                 <Center>
                     <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
-                        <HomeCard />
-                        <HomeCard />
-                        <HomeCard />
-                        <HomeCard />
-                        <HomeCard />
-                        <HomeCard />
-
+                        {data.map((product) => {
+                            return <HomeCard title={product.name} />
+                        })}
 
                     </SimpleGrid >
                 </Center>

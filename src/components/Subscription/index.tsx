@@ -4,7 +4,7 @@ import { Box, Image, Text, Flex, Center, Button, Divider } from "@chakra-ui/reac
 const Subscription = () => {
 
     return (
-        <Box maxWidth={['80rem']} mx={['0', 'auto']}>
+        <Box maxWidth={['80rem']} mx={['0', 'auto']} >
 
             <Box backgroundColor='' >
                 <Center>

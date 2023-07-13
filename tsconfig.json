@@ -42,7 +42,8 @@
     "src/pages/flowers/page.js",
     "src/components/LogoHeader/index.js",
     "src/components/IconWidgetTray/index.js",
-    "src/components/admin/index.js"
+    "src/components/admin/index.js",
+    "src/components/Home/HomeProducts.js"
   ],
   "exclude": [
     "node_modules"

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext } from 'react';
 
 import { Caveat } from 'next/font/google';
 import { Playball } from '@next/font/google'
@@ -13,7 +13,6 @@ import { Box, ChakraProvider } from '@chakra-ui/react';
 
 import Contact from '@/components/Contact';
 import { Logo } from '@/components/Logo'
-import { Jumbotron } from '@/components/Jumbotron';
 import { NavBar } from '@/components/NavBar'
 
 Amplify.configure(awsconfig);
@@ -44,8 +43,10 @@ export interface GraphQLResult {
     };
 }
 
+export const DataContext = createContext([]);
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
-    const [productData, setProductData] = React.useState(null);
+    const [productData, setProductData] = React.useState([]);
 
     React.useEffect(() => {
         fetchProducts()
@@ -66,7 +67,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             })
         );
         setProductData(productsFromAPI);
-        console.log(productsFromAPI)
     }
 
     return (
@@ -76,7 +76,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                     <Box backgroundColor={'#fafafa'} >
                         <Logo />
                         <NavBar />
-                        <Component {...pageProps} />
+                        <DataContext.Provider value={productData}>
+                            <Component {...pageProps} />
+                        </DataContext.Provider>
                         <Contact />
                     </Box>
                 </main>

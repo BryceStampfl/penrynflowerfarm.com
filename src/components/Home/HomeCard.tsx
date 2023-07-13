@@ -3,8 +3,11 @@ import { Card, CardBody, Image, Stack, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import { inter } from "@/pages/_app"
 
+type AppProps = {
+    title: string;
+}
 
-export const HomeCard = () => {
+export const HomeCard = ({ title }: AppProps) => {
     const flowerName = 'FlowerNameHolder'
 
     return (
@@ -18,7 +21,7 @@ export const HomeCard = () => {
                     />
                 </Link>
                 <Stack spacing='0' className={inter.className}>
-                    <Text backgroundColor={'#fafafa'} fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >Flower Example</Text>
+                    <Text backgroundColor={'#fafafa'} fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{title}</Text>
                     {/* <Text color='#DD4B52' fontSize='2xl'>$450</Text> */}
                 </Stack>
             </CardBody>
