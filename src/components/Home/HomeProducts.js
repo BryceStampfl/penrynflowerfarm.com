@@ -17,7 +17,7 @@ const HomeProducts = () => {
                 <Center>
                     <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
                         {data.map((product) => {
-                            return <HomeCard title={product.name} />
+                            return <HomeCard key={product.name} title={product.name} src={product.imageUrl} />
                         })}
 
                     </SimpleGrid >

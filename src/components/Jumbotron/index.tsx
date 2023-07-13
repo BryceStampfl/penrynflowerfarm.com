@@ -9,6 +9,7 @@ export const Jumbotron = () => {
                 width={'100%'}
                 height={['12rem', 'auto']}
                 objectFit={'cover'}
+                alt='flower bouquet'
                 src='NewBanner.jpg'
                 mx='auto'
                 mb={['1rem', 'auto']}

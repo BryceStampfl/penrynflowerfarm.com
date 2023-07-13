@@ -6,6 +6,7 @@ const ImageWidget = () => {
         <Box >
             <Image id='Image'
                 width={'100%'}
+                alt={'basket'}
                 src='LongBasket.jpg'
             />
         </Box>

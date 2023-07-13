@@ -10,6 +10,7 @@ const HomeImageBox = ({ imageName }) => {
                 objectFit={'contain'}
                 maxWidth='100%'
                 height='auto'
+                alt='image'
                 src={imageName} />
         </Box>
     )

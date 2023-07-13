@@ -1,9 +1,8 @@
 import React from 'react'
-import { Box, Image, Text, Flex, Center, Button, Divider } from "@chakra-ui/react"
+import { Box, Image, Text, Flex, Center, Button } from "@chakra-ui/react"
 
 
 const GiftCards = () => {
-
 
     return (
         <Box maxWidth={['80rem']} mx={['0', 'auto']}>
@@ -22,6 +21,7 @@ const GiftCards = () => {
                             maxWidth='100%'
                             width='200rem'
                             height='auto'
+                            alt='giftcard'
                             src={'/giftcard.jpg'} />
                     </Box>
 

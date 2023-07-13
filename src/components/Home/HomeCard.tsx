@@ -5,9 +5,10 @@ import { inter } from "@/pages/_app"
 
 type AppProps = {
     title: string;
+    src: string;
 }
 
-export const HomeCard = ({ title }: AppProps) => {
+export const HomeCard = ({ title, src }: AppProps) => {
     const flowerName = 'FlowerNameHolder'
 
     return (
@@ -16,7 +17,7 @@ export const HomeCard = ({ title }: AppProps) => {
                 <Link href={`/flowers/${flowerName}/page`}>
                     <Image
                         boxSize={['auto', '15rem']}
-                        src='https://images.unsplash.com/photo-1596073419667-9d77d59f033f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHw%3D&w=1000&q=80'
+                        src={src}
                         alt='Green double couch with wooden legs'
                     />
                 </Link>

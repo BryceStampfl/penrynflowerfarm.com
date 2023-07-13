@@ -9,6 +9,7 @@ export const Logo = () => {
                 <Image
                     width={['12rem', '16rem']}
                     src='logo2.png'
+                    alt='logo'
                 />
             </Center>
         </Box>
