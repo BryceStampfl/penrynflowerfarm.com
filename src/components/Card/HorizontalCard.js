@@ -1,7 +1,8 @@
 import { Card, Stack, Image, CardBody, Flex, CardFooter, Button, Text, Center } from "@chakra-ui/react"
 import Link from "next/link"
 
-const HorizontalCard = () => {
+
+const HorizontalCard = ({ title, src, description }) => {
 
     const flowerName = 'FlowerNameTemp'
     return (
@@ -15,6 +16,7 @@ const HorizontalCard = () => {
             direction={['column', 'column', 'column', 'row']}
             overflow='hidden'
             variant='outline'
+            mb='2rem'
         >
             <Link href={`/flowers/${flowerName}/page`}>
 
@@ -22,7 +24,7 @@ const HorizontalCard = () => {
                     boxSize={['auto', '20rem']}
                     objectFit='cover'
                     maxW={{ base: '100%' }}
-                    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
+                    src={src}
                     alt='Caffe Latte'
                 />
             </Link>
@@ -30,9 +32,9 @@ const HorizontalCard = () => {
             <Stack>
                 <CardBody>
 
-                    <Text fontSize={['auto', '2rem']} fontStyle={'italic'}>Example Name</Text>
+                    <Text fontSize={['auto', '2rem']} fontStyle={'italic'}>{title}</Text>
                     <Text py='2' fontSize={['auto', '1.25rem']}>
-                        An absolutely beautiful flower bouquet with multiple flowers and plants
+                        {description}
                     </Text>
                 </CardBody>
 

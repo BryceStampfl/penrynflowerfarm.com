@@ -9,12 +9,11 @@ type AppProps = {
 }
 
 export const HomeCard = ({ title, src }: AppProps) => {
-    const flowerName = 'FlowerNameHolder'
 
     return (
         <Card variant={'unstyled'}>
             <CardBody >
-                <Link href={`/flowers/${flowerName}/page`}>
+                <Link href={`/flowers/${title}/page`}>
                     <Image
                         boxSize={['auto', '15rem']}
                         src={src}
