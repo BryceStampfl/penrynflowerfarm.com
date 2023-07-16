@@ -46,6 +46,8 @@ export interface GraphQLResult {
 }
 
 export const DataContext = createContext([]);
+export const CartContext = createContext([]);
+
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
     const [productData, setProductData] = React.useState([]);
@@ -79,7 +81,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                         <Logo />
                         <NavBar />
                         <DataContext.Provider value={productData}>
-                            <Component {...pageProps} />
+                            <CartContext.Provider value={[]}>
+                                <Component {...pageProps} />
+                            </CartContext.Provider>
                         </DataContext.Provider>
                         <Contact />
                     </Box>
