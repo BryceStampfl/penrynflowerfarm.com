@@ -9,10 +9,13 @@ type AppProps = {
     description: string;
 }
 
-export const HomeCard = ({ title, src, description }: AppProps) => {
+export const ProductCard = ({ title, src, description }: AppProps) => {
 
     return (
-        <Box boxShadow={'lg'} p='1rem' bg='white'>
+        <Box
+            // boxShadow={'md'}
+            mb='2rem'
+        >
 
             <Card variant={'unstyled'} >
                 <CardBody >
@@ -31,8 +34,10 @@ export const HomeCard = ({ title, src, description }: AppProps) => {
                         />
                     </Link>
                     <Stack spacing='0' className={inter.className}>
-                        <Text backgroundColor={'#fafafa'} fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{title}</Text>
-                        {/* <Text color='#DD4B52' fontSize='2xl'>$450</Text> */}
+                        <Text fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{title}</Text>
+                        <Text color='#63666A'>Category</Text>
+                        <Text color='darkgreen' fontSize='2xl'>$450</Text>
+
                     </Stack>
                 </CardBody>
             </Card>
@@ -40,3 +45,4 @@ export const HomeCard = ({ title, src, description }: AppProps) => {
 
     )
 }
+export default ProductCard

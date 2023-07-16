@@ -1,28 +1,26 @@
 import React from 'react';
 
-import { Box, SimpleGrid, Text, Center, Divider, Flex } from '@chakra-ui/react'
-import HorizontalCard from '../Card/HorizontalCard'
-import { DataContext } from '@/pages/_app';
+import { Box, Flex } from '@chakra-ui/react'
 
+import SearchBar from './SearchBar'
+import ProductListings from './ProductListings'
+import ProductCategories from './ProductCategories'
 
 const ProductPage = () => {
 
-    const data = React.useContext(DataContext)
-
-
     return (
-        <>
-            <Box textAlign={'center'} >
-                <Center>
-                    <Flex direction={'column'}>
-                        {data.map((product) => {
-                            return <HorizontalCard key={product.id} title={product.name} src={product.imageUrl} description={product.description} />
-                        })}
+        <Box maxW={'80rem'} mx='auto'  >
+            <Flex gap={'2rem'} display='inline-flex' flexDir={['column', 'row']}>
+                <Box>
+                    <Flex flexDir={'column'} minWidth={['auto', '20rem']} >
+                        <SearchBar />
+                        <ProductCategories />
 
                     </Flex>
-                </Center>
-            </Box >
-        </>
+                </Box>
+                <ProductListings />
+            </Flex >
+        </Box >
     )
 }
 export default ProductPage

@@ -39,7 +39,7 @@ const Contact = () => {
             <Box>
                 <Center>
 
-                    <Text color={'gray'} fontSize={'0.75rem'}>@2019 Penryn Flower Farm | Brand & Website Designs By Bryce Stampfl</Text>
+                    <Text color={'#63666A'} fontSize={'0.75rem'}>@2019 Penryn Flower Farm | Brand & Website Designs By Bryce Stampfl</Text>
                 </Center>
 
             </Box>

@@ -27,7 +27,14 @@ export const NavBar = () => {
 
 
     return (
-        <Box mx='auto' border={['0', '1px']} borderColor='lightgrey' mb='1rem' maxW='80rem' >
+        <Box
+            mx='auto'
+            border={['0', '1px']}
+            borderColor='lightgrey'
+            mb='2rem'
+            maxW='80rem'
+            boxShadow={'xs'}
+        >
             <Box id='navbar' >
                 <Center>
                     <Button

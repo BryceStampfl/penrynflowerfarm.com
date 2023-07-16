@@ -12,8 +12,9 @@ const HomeProducts = () => {
     data.length = 6
 
     return (
+
         <>
-            <Box textAlign={'center'} mb='1rem' borderColor='lightgrey' borderX={['0', '1px']}>
+            <Box textAlign={'center'} mb='1rem' color='#405654' borderX={['0px', '1px']}>
                 <Center>
                     <SimpleGrid columns={[1, 2, 3, 4]} spacing={5}>
                         {data.map((product) => {

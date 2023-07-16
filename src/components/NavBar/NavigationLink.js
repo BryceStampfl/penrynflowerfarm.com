@@ -10,14 +10,13 @@ const NavigationLink = ({ name, to, active, setActive }) => {
     }
 
     return (
-        <Box padding={'1rem'} onClick={handleClick} borderRight='1px' borderColor='lightgray'
-        >
+        <Box padding={'1rem'} onClick={handleClick} borderRight='1px' borderColor='lightgray'        >
             <Link
                 href={to}
             >
                 <Text
                     // #f6c492 peach
-                    color={to == active ? 'darkgreen' : '#737373'}
+                    color={to == active ? 'darkgreen' : '#63666A'}
                     textUnderlineOffset='0.5rem'
 
                     textDecoration={to == active ? 'underline' : 'none'}
