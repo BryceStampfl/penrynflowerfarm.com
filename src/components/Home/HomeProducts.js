@@ -29,7 +29,7 @@ const HomeProducts = () => {
                         variant={'outline'}
 
                         width={['auto', '13rem']}
-                        height={['auto', '2.5rem']}
+                        height={['2.5rem']}
                         fontSize={'1rem'}
 
                         color='white' backgroundColor='#405654'

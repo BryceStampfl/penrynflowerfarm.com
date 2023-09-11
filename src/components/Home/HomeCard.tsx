@@ -12,8 +12,7 @@ type AppProps = {
 export const HomeCard = ({ title, src, description }: AppProps) => {
 
     return (
-        <Box boxShadow={'lg'} p='1rem' bg='white'>
-
+        <Box boxShadow={'lg'} p={['0', '1rem']} bg='white'>
             <Card variant={'unstyled'} >
                 <CardBody >
                     <Link href={{
@@ -25,6 +24,7 @@ export const HomeCard = ({ title, src, description }: AppProps) => {
                         }
                     }}>
                         <Image
+                            objectFit='scale-down'
                             boxSize={['auto', '15rem']}
                             src={src}
                             alt='Green double couch with wooden legs'

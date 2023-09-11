@@ -24,6 +24,7 @@ const JumbotronImageOverlay = () => {
                 >
                     <Flex
                         justifyContent={'space-around'}
+                        alignItems={'center'}
                         maxW={'80rem'}
                         flexDir={['column', 'row']}
                     >

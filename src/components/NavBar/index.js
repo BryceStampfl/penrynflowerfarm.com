@@ -29,7 +29,7 @@ export const NavBar = () => {
 
     return (
         <Box
-            mx='auto'
+            mx={[0, 'auto']}
             border={['0', '1px']}
             borderColor='lightgrey'
             mb='2rem'
@@ -60,7 +60,7 @@ export const NavBar = () => {
                 >
                     <Center>
                         <Flex id='flex'
-                            justifyContent={'center'}
+                            justifyContent={['flex-start', 'center']}
                             direction={['column', 'row']}
                         >
                             {navData.map((data) => (

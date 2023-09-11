@@ -8,10 +8,7 @@ const GiftCards = () => {
         <Box maxWidth={['80rem']} mx={['0', 'auto']} border={['0', '1px']} borderColor='lightgrey'>
 
             <Box >
-                <Center>
-                    <Text fontSize={'4rem'} color='#405654'>{"GiftCards"}</Text>
 
-                </Center>
 
                 <Flex direction={{ base: 'column', medium: 'row' }}>
                     <Box mr='2rem'>
@@ -26,6 +23,10 @@ const GiftCards = () => {
                     </Box>
 
                     <Box>
+                        <Center>
+                            <Text fontSize={'4rem'} color='#405654'>{"GiftCards"}</Text>
+
+                        </Center>
                         <Flex>
                             <Text fontSize={"2rem"}>
                                 Experience the beauty of fresh flowers in your home every month with our stunning flower

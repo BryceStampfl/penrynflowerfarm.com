@@ -46,11 +46,24 @@ export interface GraphQLResult {
 }
 
 export const DataContext = createContext([]);
-export const CartContext = createContext([]);
+
+export const CartContext = createContext({});
+
 
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+
     const [productData, setProductData] = React.useState([]);
+    const [cartData, setCartData] = React.useState([]);
+
+
+    const addToCart = (item: any) => {
+        let newArray: any = [...cartData]
+        newArray.push(item)
+
+    }
+
+
 
     React.useEffect(() => {
         fetchProducts()
@@ -81,7 +94,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                         <Logo />
                         <NavBar />
                         <DataContext.Provider value={productData}>
-                            <CartContext.Provider value={[]}>
+                            <CartContext.Provider value={{ cartData, }}>
                                 <Component {...pageProps} />
                             </CartContext.Provider>
                         </DataContext.Provider>
@@ -94,3 +107,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 }
 
 export default MyApp;
+

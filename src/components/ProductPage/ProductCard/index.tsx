@@ -8,9 +8,10 @@ type AppProps = {
     title: string;
     src: string;
     description: string;
+    updateCart: any;
 }
 
-export const ProductCard = ({ title, src, description }: AppProps) => {
+export const ProductCard = ({ title, src, description, updateCart }: AppProps) => {
 
 
 

@@ -20,6 +20,7 @@ const DrawerLink = ({ name, to, active, setActive }) => {
 
 
 
+
     return (
         <>
             <Box padding={'1rem'} onClick={onOpen} borderRight='1px' borderColor='lightgray'        >
@@ -45,7 +46,7 @@ const DrawerLink = ({ name, to, active, setActive }) => {
                 <DrawerOverlay />
                 <DrawerContent>
                     <DrawerCloseButton />
-                    <DrawerHeader>Create your account</DrawerHeader>
+                    <DrawerHeader>Cart</DrawerHeader>
 
                     <DrawerBody>
                         <Input placeholder='Type here...' />

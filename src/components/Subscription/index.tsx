@@ -6,12 +6,7 @@ const Subscription = () => {
     return (
         <Box maxWidth={['80rem']} mx={['0', 'auto']} border={['0', '1px']} borderColor='lightgrey' >
 
-            <Box>
-                <Center>
-                    <Text fontSize={'2rem'} color='darkgreen'>{"Subscription"}</Text>
-
-                </Center>
-
+            <Box >
                 <Flex direction={{ base: 'column', medium: 'row' }}>
                     <Box mr='2rem'>
 
@@ -23,7 +18,12 @@ const Subscription = () => {
                     </Box>
 
                     <Box>
+                        <Center>
+                            <Text fontSize={'2rem'} color='darkgreen'>{"Subscription"}</Text>
+
+                        </Center>
                         <Flex>
+
                             <Text fontSize={"1.5rem"}>
                                 Experience the beauty of fresh flowers in your home every month with our stunning flower bouquet
                                 subscription service! Imagine receiving a gorgeous bouquet of hand-selected, seasonal blooms delivered

@@ -14,7 +14,7 @@ const Home = () => {
                     <Jumbotron />
                     <HomeProducts />
                     <JumbotronImageOverlay />
-                    <IconWidgetTray />
+                    {/* <IconWidgetTray /> */}
 
                 </Box>
             </Center>

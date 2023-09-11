@@ -10,7 +10,7 @@ const NavigationLink = ({ name, to, active, setActive }) => {
     }
 
     return (
-        <Box padding={'1rem'} onClick={handleClick} borderRight='1px' borderColor='lightgray'        >
+        <Box padding={'1rem'} onClick={handleClick} borderRight={['0', '1px']} borderColor='lightgray'        >
             <Link
                 href={to}
             >
