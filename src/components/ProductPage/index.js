@@ -10,14 +10,7 @@ const ProductPage = () => {
 
     return (
         <Box maxW={'80rem'} mx='auto'  >
-            <Flex gap={'2rem'} display='inline-flex' flexDir={['column', 'row']}>
-                <Box>
-                    <Flex flexDir={'column'} minWidth={['auto', '20rem']} >
-                        <SearchBar />
-                        <ProductCategories />
-
-                    </Flex>
-                </Box>
+            <Flex display='inline-flex' flexDir={['column', 'row']}>
                 <ProductListings />
             </Flex >
         </Box >

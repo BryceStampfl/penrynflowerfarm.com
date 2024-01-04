@@ -1,7 +1,7 @@
 
-import GiftCards from '@/components/GiftCards';
+import Cart from '@/components/Cart';
 
 const CartPage = () => {
-    return (<GiftCards />)
+    return (<Cart />)
 }
 export default CartPage

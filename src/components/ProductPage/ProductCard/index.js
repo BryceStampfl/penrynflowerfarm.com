@@ -1,23 +1,13 @@
 import React from 'react'
 import { Card, CardBody, Image, Stack, Text, Box, Button, useToast } from '@chakra-ui/react'
 import Link from 'next/link'
-import { inter } from "@/pages/_app"
-import { CartContext } from '@/pages/_app';
-
-type AppProps = {
-    title: string;
-    src: string;
-    description: string;
-    updateCart: any;
-}
-
-export const ProductCard = ({ title, src, description, updateCart }: AppProps) => {
+import { inter, CartContext } from "@/pages/_app"
 
 
+export const ProductCard = ({ product }) => {
 
+    const { cart, setCart } = React.useContext(CartContext);
     const toast = useToast()
-    const cart = React.useContext(CartContext)
-
 
     const buttonPressed = () => {
         toast({
@@ -28,31 +18,32 @@ export const ProductCard = ({ title, src, description, updateCart }: AppProps) =
             duration: 5000,
             isClosable: true,
         })
-
+        setCart(cart => [product, ...cart]);
 
     }
 
     return (
-        <Box mb='2rem' >
-            <Card variant={'unstyled'} >
+
+        <Box mb='2rem' boxShadow={'md'} mx='auto'>
+            <Card bg='#faffff' >
                 <CardBody >
                     <Link href={{
-                        pathname: `/flowers/${title}/page`,
+                        pathname: `/flowers/${product.name}/page`,
                         query: {
-                            title: title,
-                            src: src,
-                            description: description
+                            title: product.name,
+                            src: product.imageUrl,
+                            description: product.description
                         }
                     }}>
                         <Image
+                            objectFit={'cover'}
                             boxSize={['auto', '15rem']}
-                            src={src}
+                            src={product.imageUrl}
                             alt='Green double couch with wooden legs'
                         />
                     </Link>
-                    <Stack spacing='0' className={inter.className}>
-                        <Text fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{title}</Text>
-                        <Text color='#63666A'>Category</Text>
+                    <Stack spacing='0' className={inter.className} >
+                        <Text maxW={'15rem'} fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{product.name} </Text>
                         <Text color='darkgreen' fontSize='2xl'>$450</Text>
                         <Button
                             onClick={buttonPressed}
@@ -62,7 +53,7 @@ export const ProductCard = ({ title, src, description, updateCart }: AppProps) =
                     </Stack>
                 </CardBody>
             </Card>
-        </Box>
+        </Box >
 
     )
 }

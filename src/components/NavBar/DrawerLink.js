@@ -18,9 +18,6 @@ const DrawerLink = ({ name, to, active, setActive }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
 
-
-
-
     return (
         <>
             <Box padding={'1rem'} onClick={onOpen} borderRight='1px' borderColor='lightgray'        >

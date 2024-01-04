@@ -11,7 +11,8 @@ const Subscription = () => {
                     <Box mr='2rem'>
 
                         <Image
-                            objectFit={'contain'}
+                            objectFit={'cover'}
+
                             maxWidth='100%'
                             height='auto'
                             src={'/bouquet.jpg'} />

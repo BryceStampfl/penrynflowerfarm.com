@@ -12,29 +12,19 @@ const ProductListings = () => {
     const data = React.useContext(DataContext)
 
     return (
-        <Box id='ProductListings' boxShadow={'md'}>
+        <Box id='ProductListings' border={['0px', '1px']}>
             <Flex flexDir={'column'} >
                 <Box
-                    padding={'3rem'}
-                    bg='white'
+                    px={'2rem'}
+                    py={'2rem'}
+                    bg='#fafafa'
                 >
-                    <Box mb='2rem'>
-                        <Text fontSize={'2rem'} color='#63666A' >Products</Text>
-                        <Text mt='0.5rem' fontSize={'0.85rem'} color='gray' >Showing 1-12 of 29 results</Text>
-
-                    </Box>
-
-                    <Box bg='white'>
+                    <Box >
                         <Center>
-                            <Flex direction={'row'} wrap={'wrap'} justifyContent={'space-between'}>
+                            <Flex direction={'row'} wrap={'wrap'} justifyContent={'flex-start'} >
                                 {data.map((product) => {
-                                    return <ProductCard key={product.id} title={product.name} src={product.imageUrl} description={product.description} />
+                                    return <ProductCard key={product.id} product={product} />
                                 })}
-                                {data.map((product) => {
-                                    return <ProductCard key={product.id} title={product.name} src={product.imageUrl} description={product.description} />
-                                })}
-
-
                             </Flex>
                         </Center>
                     </Box >

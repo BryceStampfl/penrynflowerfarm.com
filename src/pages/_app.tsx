@@ -9,12 +9,13 @@ import awsconfig from '../aws-exports';
 import { listProducts } from '../graphql/queries'
 
 import type { AppProps } from 'next/app';
-import { Box, ChakraProvider } from '@chakra-ui/react';
+import { Box, ChakraProvider, Center } from '@chakra-ui/react';
 
 import Contact from '@/components/Contact';
 import { Logo } from '@/components/Logo'
 import { NavBar } from '@/components/NavBar'
 import IconWidgetTray from '@/components/IconWidgetTray';
+
 
 Amplify.configure(awsconfig);
 
@@ -47,23 +48,17 @@ export interface GraphQLResult {
 
 export const DataContext = createContext([]);
 
-export const CartContext = createContext({});
-
-
+export const CartContext = React.createContext({
+    cart: [{}],
+    setCart: () => { },
+});
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
     const [productData, setProductData] = React.useState([]);
-    const [cartData, setCartData] = React.useState([]);
+    const [cart, setCart]: any = React.useState([]);
 
-
-    const addToCart = (item: any) => {
-        let newArray: any = [...cartData]
-        newArray.push(item)
-
-    }
-
-
+    const cartValue = { cart, setCart }
 
     React.useEffect(() => {
         fetchProducts()
@@ -85,6 +80,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         );
         setProductData(productsFromAPI);
     }
+    console.log(cart)
 
     return (
         <>
@@ -94,7 +90,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                         <Logo />
                         <NavBar />
                         <DataContext.Provider value={productData}>
-                            <CartContext.Provider value={{ cartData, }}>
+                            <CartContext.Provider value={cartValue}>
                                 <Component {...pageProps} />
                             </CartContext.Provider>
                         </DataContext.Provider>

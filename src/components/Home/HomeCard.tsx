@@ -12,8 +12,8 @@ type AppProps = {
 export const HomeCard = ({ title, src, description }: AppProps) => {
 
     return (
-        <Box boxShadow={'lg'} p={['0', '1rem']} bg='white'>
-            <Card variant={'unstyled'} >
+        <Box boxShadow={'md'} my='1rem' mx='1rem'>
+            <Card bg='#faffff' >
                 <CardBody >
                     <Link href={{
                         pathname: `/flowers/${title}/page`,
@@ -24,19 +24,19 @@ export const HomeCard = ({ title, src, description }: AppProps) => {
                         }
                     }}>
                         <Image
-                            objectFit='scale-down'
-                            boxSize={['auto', '15rem']}
+                            objectFit='cover'
+                            boxSize={['auto', '18rem']}
                             src={src}
                             alt='Green double couch with wooden legs'
                         />
                     </Link>
                     <Stack spacing='0' className={inter.className}>
-                        <Text backgroundColor={'#fafafa'} fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{title}</Text>
+                        <Text maxW={'15rem'} backgroundColor={'#faffff'} fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{title}</Text>
                         {/* <Text color='#DD4B52' fontSize='2xl'>$450</Text> */}
                     </Stack>
                 </CardBody>
             </Card>
-        </Box>
+        </Box >
 
     )
 }

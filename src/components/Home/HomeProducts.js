@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, SimpleGrid, Button, Center } from '@chakra-ui/react'
+import { Box, Flex, Button, Center } from '@chakra-ui/react'
 import { HomeCard } from './HomeCard';
 import Link from 'next/link';
 import { DataContext } from '@/pages/_app';
@@ -8,21 +8,18 @@ import { DataContext } from '@/pages/_app';
 const HomeProducts = () => {
 
     const data = React.useContext(DataContext)
-    console.log(data)
-    data.length = 6
+    let concatData = [...data];
+    concatData.length = 3;
 
     return (
-
         <>
             <Box textAlign={'center'} mb='1rem' color='#405654' borderX={['0px', '1px']}>
-                <Center>
-                    <SimpleGrid columns={[1, 2, 3, 4]} spacing={5}>
-                        {data.map((product) => {
-                            return <HomeCard key={product.name} title={product.name} src={product.imageUrl} description={product.description} />
-                        })}
+                <Flex dir='row' justifyContent={'center'} >
+                    {concatData.map((product) => {
+                        return <HomeCard key={product.name} title={product.name} src={product.imageUrl} description={product.description} />
+                    })}
 
-                    </SimpleGrid >
-                </Center>
+                </Flex >
 
                 <Link href={'/flowers/page'}>
                     <Button mt='1rem'

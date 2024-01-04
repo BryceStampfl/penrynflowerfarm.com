@@ -16,7 +16,7 @@ export const NavBar = () => {
         { name: 'SUBSCRIPTION', to: '/subscription/page' },
         { name: 'GIFT CARDS', to: '/giftcards/page' },
         { name: 'ABOUT', to: '/about/page' },
-        // { name: 'CART', to: '/cart/page' }
+        { name: 'CART', to: '/cart/page' },
     ];
 
     const linkPressed = (name) => {
@@ -66,7 +66,6 @@ export const NavBar = () => {
                             {navData.map((data) => (
                                 <NavigationLink key={data.name} name={data.name} to={data.to} active={router.pathname} setActive={linkPressed} />
                             ))}
-                            <DrawerLink />
                         </Flex>
                     </Center>
 

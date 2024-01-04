@@ -13,9 +13,6 @@ const Home = () => {
                 <Box maxWidth='80rem' >
                     <Jumbotron />
                     <HomeProducts />
-                    <JumbotronImageOverlay />
-                    {/* <IconWidgetTray /> */}
-
                 </Box>
             </Center>
         </Box >
