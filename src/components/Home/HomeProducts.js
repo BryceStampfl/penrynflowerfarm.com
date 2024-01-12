@@ -9,16 +9,19 @@ const HomeProducts = () => {
 
     const data = React.useContext(DataContext)
     let concatData = [...data];
-    concatData.length = 3;
+    concatData.length = 5;
 
+    /*
+    green border color='#405654' borderX={['0px', '1px']}
+    */
     return (
         <>
-            <Box textAlign={'center'} mb='1rem' color='#405654' borderX={['0px', '1px']}>
-                <Flex dir='row' justifyContent={'center'} >
+            <Box textAlign={'center'} mb='1rem' >
+
+                <Flex justifyContent={'space-between'}>
                     {concatData.map((product) => {
                         return <HomeCard key={product.name} title={product.name} src={product.imageUrl} description={product.description} />
                     })}
-
                 </Flex >
 
                 <Link href={'/flowers/page'}>

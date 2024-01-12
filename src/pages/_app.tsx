@@ -12,9 +12,9 @@ import type { AppProps } from 'next/app';
 import { Box, ChakraProvider, Center } from '@chakra-ui/react';
 
 import Contact from '@/components/Contact';
-import { Logo } from '@/components/Logo'
-import { NavBar } from '@/components/NavBar'
-import IconWidgetTray from '@/components/IconWidgetTray';
+import { Logo } from '@/components/SharedComponents/Logo'
+import { NavBar } from '@/components/SharedComponents/NavBar'
+
 
 
 Amplify.configure(awsconfig);
@@ -80,7 +80,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         );
         setProductData(productsFromAPI);
     }
-    console.log(cart)
+    // console.log(cart)
 
     return (
         <>
