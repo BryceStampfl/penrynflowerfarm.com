@@ -41,7 +41,7 @@
     "src/components/NavigationHeader/NavigationLink.js",
     "src/pages/flowers/page.js",
     "src/components/LogoHeader/index.js",
-    "src/components/IconWidgetTray/index.js",
+    "src/components/Home/OldHomeComponents/IconWidgetTray/index.js",
     "src/components/admin/index.js",
     "src/components/Home/HomeProducts.js",
     "src/pages/_app.js",

@@ -15,13 +15,13 @@ const ProductListings = () => {
         <Box id='ProductListings' border={['0px', '1px']}>
             <Flex flexDir={'column'} >
                 <Box
-                    px={'2rem'}
-                    py={'2rem'}
+                    px={'0rem'}
+                    py={'1rem'}
                     bg='#fafafa'
                 >
                     <Box >
                         <Center>
-                            <Flex direction={'row'} wrap={'wrap'} justifyContent={'flex-start'} >
+                            <Flex direction={'row'} wrap={'wrap'} gap={'1rem'} justifyContent={'flex-start'} >
                                 {data.map((product) => {
                                     return <ProductCard key={product.id} product={product} />
                                 })}

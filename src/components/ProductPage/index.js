@@ -14,7 +14,7 @@ const ProductPage = () => {
         <Box maxW={'80rem'} mx='auto'  >
             <Jumbotron />
 
-            <Flex display='inline-flex' flexDir={['column', 'row']}>
+            <Flex gap={'1rem'} display='inline-flex' flexDir={['column', 'row']}>
                 <ProductListings />
             </Flex >
         </Box >

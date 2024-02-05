@@ -24,9 +24,9 @@ export const ProductCard = ({ product }) => {
 
     return (
 
-        <Box mb='2rem' boxShadow={'md'} mx='auto'>
-            <Card bg='#faffff' >
-                <CardBody >
+        <Box mb='2rem' mx='auto'>
+            <Card bg='#faffff' variant={'unstyled'} >
+                <CardBody  >
                     <Link href={{
                         pathname: `/flowers/${product.name}/page`,
                         query: {
