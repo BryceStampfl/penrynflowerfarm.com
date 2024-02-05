@@ -24,7 +24,7 @@ const Contact = () => {
                         <Flex gap={5}>
                             <a href="https://www.instagram.com/penrynflowerfarm/"><Text>INSTAGRAM</Text> </a>
                             <a href="mailto:PenrynFlowerFarm@Gmail.com"><Text>EMAIL</Text></a>
-                            <a href="https://www.facebook.com/sandra.weidel.737"><Text>FACEBOOK</Text></a>
+                            <a href="https://www.facebook.com/PenrynFlowerFarm/"><Text>FACEBOOK</Text></a>
 
 
                             {/* <SocialIcon url='https://www.instagram.com/penrynflowerfarm/' style={{ height: 25, width: 25 }} />

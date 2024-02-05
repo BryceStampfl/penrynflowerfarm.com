@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Center, Image } from '@chakra-ui/react'
+import LogoUrl from '../../../../public/logo2.png'
 
 export const Logo = () => {
 
@@ -8,7 +9,7 @@ export const Logo = () => {
             <Center>
                 <Image
                     width={['12rem', '16rem']}
-                    src='logo2.png'
+                    src={LogoUrl.src}
                     alt='logo'
                 />
             </Center>

@@ -11,7 +11,7 @@ import { listProducts } from '../graphql/queries'
 import type { AppProps } from 'next/app';
 import { Box, ChakraProvider, Center } from '@chakra-ui/react';
 
-import Contact from '@/components/Contact';
+import Contact from '@/components/SharedComponents/Contact';
 import { Logo } from '@/components/SharedComponents/Logo'
 import { NavBar } from '@/components/SharedComponents/NavBar'
 

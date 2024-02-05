@@ -44,7 +44,7 @@ export const ProductCard = ({ product }) => {
                     </Link>
                     <Stack spacing='0' className={inter.className} >
                         <Text maxW={'15rem'} fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{product.name} </Text>
-                        <Text color='darkgreen' fontSize='2xl'>$450</Text>
+                        {/* <Text color='darkgreen' fontSize='2xl'>$450</Text> */}
                         <Button
                             onClick={buttonPressed}
                             color='white'
