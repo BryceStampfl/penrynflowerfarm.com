@@ -3,9 +3,6 @@ import { RobotoFont } from "@/pages/_app"
 import Link from 'next/link';
 
 const ImageWithText = ({ url, text, link }) => {
-    console.log(link)
-
-
     return (
         <Box position={'relative'} textAlign={'center'} className={RobotoFont.className} >
             <Image src={url}
@@ -29,7 +26,6 @@ const ImageWithText = ({ url, text, link }) => {
                     >{text}</Text>
                 </Box>
             </Link>
-
         </Box >
     )
 }

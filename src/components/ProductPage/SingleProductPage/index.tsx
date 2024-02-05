@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 
 import { Box, Text, Center } from '@chakra-ui/react';
-import HorizontalCard from '../Card/HorizontalCard';
+import HorizontalCard from './Card/HorizontalCard';
 
 const SingleProductPage = () => {
     // const { asPath } = useRouter()

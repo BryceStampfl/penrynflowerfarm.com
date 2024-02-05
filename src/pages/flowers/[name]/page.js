@@ -1,4 +1,4 @@
-import SingleProductPage from '@/components/SingleProductPage'
+import SingleProductPage from '@/components/ProductPage/SingleProductPage'
 
 const FlowerID = () => {
     return (

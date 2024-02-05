@@ -36,6 +36,7 @@ const HorizontalCard = ({ title, src, description }) => {
                     <Text py='2' fontSize={['auto', '1.25rem']}>
                         {description}
                     </Text>
+                    <Text fontSize={['auto', '1.25rem']}> To place an order please contact me at https://penrynflowerfarm@gmail.com</Text>
                 </CardBody>
 
                 <CardFooter>

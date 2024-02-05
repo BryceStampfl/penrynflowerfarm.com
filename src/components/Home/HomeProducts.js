@@ -10,8 +10,7 @@ const HomeProducts = () => {
     const data = React.useContext(DataContext)
     let concatData = [...data];
     concatData.length = 5;
-
-    /*
+    /* 
     green border color='#405654' borderX={['0px', '1px']}
     */
     return (
