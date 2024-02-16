@@ -11,12 +11,14 @@ const Cart = () => {
     return (
         <Box>
             <Flex flexDir={'column'} >
-                <Box px={'2rem'} py={'2rem'} bg='#fafafa'>
+                <Box px={'1rem'} py={'1rem'} bg='#fafafa'>
                     <Box >
                         <Center>
-                            <Flex direction={'column'}  >
+                            <Flex direction={'column'}>
                                 {cart.map((product) => {
-                                    return <CartCard key={product.id} product={product} />
+                                    return (
+                                        <Box mb='1rem'>
+                                            <CartCard key={product.id} product={product} /></Box>)
                                 })}
                             </Flex>
                         </Center>

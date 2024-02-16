@@ -12,11 +12,11 @@ const ProductListings = () => {
     const data = React.useContext(DataContext)
 
     return (
-        <Box id='ProductListings' border={['0px', '1px']}>
+        <Box id='ProductListings' border={['0px', '0px']}>
             <Flex flexDir={'column'} >
                 <Box
                     px={'0rem'}
-                    py={'1rem'}
+                    py={'0rem'}
                     bg='#fafafa'
                 >
                     <Box >

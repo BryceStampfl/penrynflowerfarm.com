@@ -13,10 +13,11 @@ export const NavBar = () => {
     const navData = [
         { name: 'HOME', to: '/' },
         { name: 'FLOWERS', to: '/flowers/page' },
-        { name: 'SUBSCRIPTION', to: '/subscription/page' },
-        { name: 'GIFT CARDS', to: '/giftcards/page' },
+        { name: 'GIFT CARDS & SUBSCRIPTIONS', to: '/subscription/page' },
+        // { name: 'GIFT CARDS', to: '/giftcards/page' },
+        { name: 'PURCHASES', to: '/cart/page' },
+
         { name: 'ABOUT', to: '/about/page' },
-        { name: 'CART', to: '/cart/page' },
     ];
 
     const linkPressed = (name) => {
@@ -63,6 +64,8 @@ export const NavBar = () => {
                             justifyContent={['flex-start', 'center']}
                             direction={['column', 'row']}
                         >
+                            <Box borderLeft={['0', '1px']} borderColor='lightgray'></Box>
+
                             {navData.map((data) => (
                                 <NavigationLink key={data.name} name={data.name} to={data.to} active={router.pathname} setActive={linkPressed} />
                             ))}
