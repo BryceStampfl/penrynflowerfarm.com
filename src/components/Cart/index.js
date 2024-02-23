@@ -17,8 +17,7 @@ const Cart = () => {
                             <Flex direction={'column'}>
                                 {cart.map((product) => {
                                     return (
-                                        <Box mb='1rem'>
-                                            <CartCard key={product.id} product={product} /></Box>)
+                                        <CartCard key={product.id} product={product} />)
                                 })}
                             </Flex>
                         </Center>
