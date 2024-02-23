@@ -15,7 +15,7 @@ const CartCard = ({ product }) => {
                 alignItems="center"
             >
                 <Image
-                    maxWidth='20rem' src={product.imageUrl} alt='img' />
+                    maxWidth='15rem' src={product.imageUrl} alt='img' />
                 <Flex direction={'column'} padding={'1rem'}>
                     <Text> Name: {product.name}</Text>
                     <Text> Description: {product.description}</Text>

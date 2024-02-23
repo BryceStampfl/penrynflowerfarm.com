@@ -17,7 +17,7 @@ const SingleProductPage = () => {
     return (
         <>
             <Box textAlign={'center'} mb='1rem' >
-                <Text fontSize={'4rem'} color='#405654'>{title}</Text>
+                {/* <Text fontSize={'4rem'} color='#405654'>{title}</Text> */}
                 <Center>
                     <HorizontalCard title={title} src={src} description={description} />
                 </Center>

@@ -15,7 +15,7 @@ export const HomePage = () => {
                 <Box maxWidth='80rem' >
                     <Jumbotron />
                     <Flex flexDir={['column', 'row']} maxW='80rem' gap={'1rem'}>
-                        <ImageWithText url='/Roses.jpg' text='Gift Cards' link='/giftcards/page' />
+                        <ImageWithText url='/Roses.jpg' text='Gift Cards' link='/subscription/page' />
                         <ImageWithText url='/bouquet.jpg' text='Subscription' link='/subscription/page' />
                         <ImageWithText url='/jumbo6.jpg' text='Explore Flowers' link='/flowers/page' />
 

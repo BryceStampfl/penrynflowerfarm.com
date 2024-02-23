@@ -8,7 +8,7 @@ const Subscription = () => {
 
             <Box >
                 <Flex direction={{ base: 'column', medium: 'row' }}>
-                    <Box mr='2rem'>
+                    <Box maxWidth={'20rem'} mr='2rem'>
 
                         <Image
                             objectFit={'cover'}
@@ -20,12 +20,15 @@ const Subscription = () => {
 
                     <Box>
                         <Center>
-                            <Text fontSize={'2rem'} color='darkgreen'>{"Subscription"}</Text>
+                            <Text mt='0.5rem' fontSize={'2rem'} color='darkgreen'>{"Gift Cards and Subscriptions"}</Text>
 
                         </Center>
-                        <Flex>
+                        <Flex flexDir={'column'}>
 
-                            <Text fontSize={"1.5rem"}>
+                            <Text mb='1rem' fontSize={"1.25rem"}> Looking to get a gift card for a loved one or a subscription for flowers delivered monthly?</Text>
+
+                            <Text fontSize={"1.25rem"}>
+
                                 Experience the beauty of fresh flowers in your home every month with our stunning flower bouquet
                                 subscription service! Imagine receiving a gorgeous bouquet of hand-selected, seasonal blooms delivered
                                 straight to your doorstep on a regular basis. Whether you&apos;re looking to treat yourself or surprise a
@@ -33,16 +36,16 @@ const Subscription = () => {
                             </Text>
                         </Flex>
 
-                        <Button variant='solid' fontSize={'2rem'}
+                        <Button width='50rem' variant='solid' fontSize={'1rem'}
                             backgroundColor={'#405654'}
                             color='white'
                         >
-                            Purchase Flower Bouquet
+                            Email for purchasing!
                         </Button>
 
                     </Box>
                 </Flex>
-            </Box>
+            </Box >
 
         </Box >
 

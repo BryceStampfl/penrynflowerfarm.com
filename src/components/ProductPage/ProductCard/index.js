@@ -24,7 +24,7 @@ export const ProductCard = ({ product }) => {
 
     return (
 
-        <Box mb='2rem' mx='auto'>
+        <Box mx='auto'>
             <Card bg='#faffff' variant={'unstyled'} >
                 <CardBody  >
                     <Link href={{

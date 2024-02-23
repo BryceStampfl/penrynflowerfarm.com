@@ -4,19 +4,20 @@ import Link from "next/link"
 
 const HorizontalCard = ({ title, src, description }) => {
 
-    const flowerName = 'FlowerNameTemp'
+    const flowerName = ''
     return (
         <Card
+            borderRadius={'0px'}
             border={'1px'}
-            borderColor={'grey'}
+            borderColor={'black'}
             backgroundColor={'#fafafa'}
             // maxW={'80rem'}
 
             width={['auto', 'auto', 'auto', 'auto', '80rem']}
             direction={['column', 'column', 'column', 'row']}
             overflow='hidden'
-            variant='outline'
-            mb='2rem'
+            variant='filled'
+            mb='1rem'
         >
             <Link href={`/flowers/${flowerName}/page`}>
 
@@ -25,7 +26,7 @@ const HorizontalCard = ({ title, src, description }) => {
                     objectFit='cover'
                     maxW={{ base: '100%' }}
                     src={src}
-                    alt='Caffe Latte'
+                    alt={title}
                 />
             </Link>
 
