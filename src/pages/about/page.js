@@ -1,7 +1,6 @@
-
-import GiftCards from '@/components/GiftCards';
+import About from '../../components/About';
 
 const AboutPage = () => {
-    return (<GiftCards />)
+    return (<About />)
 }
 export default AboutPage

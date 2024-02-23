@@ -15,7 +15,7 @@ export const NavBar = () => {
         { name: 'FLOWERS', to: '/flowers/page' },
         { name: 'GIFT CARDS & SUBSCRIPTIONS', to: '/subscription/page' },
         // { name: 'GIFT CARDS', to: '/giftcards/page' },
-        { name: 'PURCHASES', to: '/cart/page' },
+        { name: 'PURCHASE', to: '/cart/page' },
 
         { name: 'ABOUT', to: '/about/page' },
     ];
