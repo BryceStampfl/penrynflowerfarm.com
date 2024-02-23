@@ -6,6 +6,7 @@ const ImageWithText = ({ url, text, link }) => {
     return (
         <Box position={'relative'} textAlign={'center'} className={RobotoFont.className} >
             <Image src={url}
+                alt={"flowers"}
                 objectFit={'cover'}
                 height='100%'
                 width='100%'
