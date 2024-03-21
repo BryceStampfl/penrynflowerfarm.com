@@ -25,13 +25,12 @@ const Subscription = () => {
                         </Center>
                         <Flex flexDir={'column'}>
 
-                            <Text mb='1rem' fontSize={"1.25rem"}> Looking to get a gift card for a loved one or a subscription for flowers delivered monthly?</Text>
+                            <Text mb='1rem' fontSize={"1.25rem"}> Looking to get a gift card for a loved one or a subscription for monthly flowers?</Text>
 
                             <Text fontSize={"1.25rem"}>
 
                                 Experience the beauty of fresh flowers in your home every month with our stunning flower bouquet
-                                subscription service! Imagine receiving a gorgeous bouquet of hand-selected, seasonal blooms delivered
-                                straight to your doorstep on a regular basis. Whether you&apos;re looking to treat yourself or surprise a
+                                subscription service!. Whether you&apos;re looking to treat yourself or surprise a
                                 loved one with a thoughtful and meaningful gift, our flower bouquet subscription is the perfect way to add some color and cheer to your life.
                             </Text>
                         </Flex>
