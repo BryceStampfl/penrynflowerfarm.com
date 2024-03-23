@@ -16,14 +16,17 @@ const ImageWithText = ({ url, text, link }) => {
             <Link href={link}>
                 <Box bgColor={'white'}
                     position={'absolute'}
-                    right={'35%'}
+                    width={'15rem'}
+                    margin={'auto'}
+                    left={0}
+                    right={0}
                     top={'60%'}
                 >
                     <Text
                         fontSize={'0.85rem'}
                         lineHeight='1'
                         letterSpacing='2px'
-                        m='1rem'
+                        m='0.85rem'
                     >{text}</Text>
                 </Box>
             </Link>
