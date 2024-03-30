@@ -1,21 +1,19 @@
 import React from 'react'
-import { Box, Image, Text, Flex, Center, Button, Divider } from "@chakra-ui/react"
+import { Box, Image, Text, Flex, Center, Button } from "@chakra-ui/react"
 
 const Subscription = () => {
 
     return (
         <Box maxWidth={['80rem']} mx={['0', 'auto']}  >
-
             <Box >
                 <Flex direction={{ base: 'column', medium: 'row' }}>
                     <Box maxWidth={'20rem'} mr='2rem'>
-
                         <Image
                             alt='flowers'
                             objectFit={'cover'}
                             maxWidth='100%'
                             height='auto'
-                            src={'/bouquet.jpg'} />
+                            src={'/Subscription/bouquet.jpg'} />
                     </Box>
 
                     <Box>
@@ -24,9 +22,7 @@ const Subscription = () => {
 
                         </Center>
                         <Flex flexDir={'column'}>
-
                             <Text mb='1rem' fontSize={"1.25rem"}> Looking to get a gift card for a loved one or a subscription for monthly flowers?</Text>
-
                             <Text fontSize={"1.25rem"}>
 
                                 Experience the beauty of fresh flowers in your home every month with our stunning flower bouquet

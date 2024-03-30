@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Center, Image } from '@chakra-ui/react'
-import LogoUrl from '../../../../public/logo2.png'
+import LogoUrl from '../../../../public/Logo/logo2.png'
 
 export const Logo = () => {
 
