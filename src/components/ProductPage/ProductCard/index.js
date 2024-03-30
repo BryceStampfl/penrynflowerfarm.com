@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, CardBody, Image, Stack, Text, Box, Button, useToast } from '@chakra-ui/react'
 import Link from 'next/link'
 import { inter, CartContext } from "@/pages/_app"
-
+import { Color } from '@/Styles/BaseStyle'
 
 export const ProductCard = ({ product }) => {
 
@@ -26,7 +26,7 @@ export const ProductCard = ({ product }) => {
 
         <Box mx='auto'>
             <Card bg='#faffff' variant={'unstyled'} >
-                <CardBody  >
+                <CardBody backgroundColor={Color.background} >
                     <Link href={{
                         pathname: `/flowers/${product.name}/page`,
                         query: {
@@ -37,19 +37,25 @@ export const ProductCard = ({ product }) => {
                     }}>
                         <Image
                             objectFit={'cover'}
-                            boxSize={['auto', '15rem']}
+                            boxSize={['10rem', '20rem']}
                             src={product.imageUrl}
-                            alt='Green double couch with wooden legs'
+                            alt='Picture of Flower'
                         />
                     </Link>
                     <Stack spacing='0' className={inter.className} >
-                        <Text maxW={'15rem'} fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{product.name} </Text>
+                        <Text
+                            textAlign={'center'}
+                            maxW={'15rem'}
+                            fontSize={'1.5rem'}
+                            fontWeight={'normal'}
+                            color={'black'}
+                        >{product.name} </Text>
                         {/* <Text color='darkgreen' fontSize='2xl'>$450</Text> */}
-                        <Button
+                        {/* <Button
                             onClick={buttonPressed}
                             color='white'
                             backgroundColor={'#405654'}
-                        >Add to Cart</Button>
+                        >Add to Cart</Button> */}
                     </Stack>
                 </CardBody>
             </Card>

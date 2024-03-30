@@ -10,7 +10,7 @@ const HorizontalCard = ({ title, src, description }) => {
             borderRadius={'0px'}
             border={'1px'}
             borderColor={'black'}
-            backgroundColor={'#fafafa'}
+            // backgroundColor={'#fafafa'}
             // maxW={'80rem'}
 
             width={['auto', 'auto', 'auto', 'auto', '80rem']}

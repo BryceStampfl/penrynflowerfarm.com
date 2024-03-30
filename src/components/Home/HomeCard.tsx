@@ -2,6 +2,8 @@ import React from 'react'
 import { Card, CardBody, Image, Stack, Text, Box } from '@chakra-ui/react'
 import Link from 'next/link'
 import { inter } from "@/pages/_app"
+import { Color } from '@/Styles/BaseStyle'
+
 
 type AppProps = {
     title: string;
@@ -12,7 +14,7 @@ type AppProps = {
 export const HomeCard = ({ title, src, description }: AppProps) => {
     return (
         <Box >
-            <Card variant={'unstyled'} bg='#faffff' >
+            <Card variant={'unstyled'} bg={Color.background} >
                 <CardBody my={'1rem'}  >
                     <Link href={{
                         pathname: `/flowers/${title}/page`,
@@ -30,7 +32,9 @@ export const HomeCard = ({ title, src, description }: AppProps) => {
                         />
                     </Link>
                     <Stack spacing='0' className={inter.className}>
-                        <Text maxW={'15rem'} backgroundColor={'#faffff'} fontSize={'1.5rem'} fontWeight={'normal'} color={'gray'} >{title}</Text>
+                        <Text maxW={'15rem'}
+                            //  backgroundColor={'#faffff'} 
+                            fontSize={'1.5rem'} fontWeight={'normal'} color={'black'} >{title}</Text>
                         {/* <Text color='#DD4B52' fontSize='2xl'>$450</Text> */}
                     </Stack>
                 </CardBody>
