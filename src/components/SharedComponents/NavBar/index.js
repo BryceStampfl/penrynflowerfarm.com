@@ -15,7 +15,7 @@ export const NavBar = () => {
         { name: 'FLOWERS', to: '/flowers/page' },
         { name: 'GIFT CARDS & SUBSCRIPTIONS', to: '/subscription/page' },
         // { name: 'GIFT CARDS', to: '/giftcards/page' },
-        { name: 'PURCHASE', to: '/cart/page' },
+        // { name: 'PURCHASE', to: '/cart/page' },
 
         { name: 'ABOUT', to: '/about/page' },
     ];
@@ -31,24 +31,18 @@ export const NavBar = () => {
     return (
         <Box
             mx={[0, 'auto']}
-            border={['0', '1px']}
-            borderColor='lightgrey'
-            mb='1rem'
+            mb='2rem'
             maxW='80rem'
-            boxShadow={'xs'}
         >
             <Box id='navbar' >
                 <Center>
                     <Button
                         display={['block', 'none']}
                         onClick={() => setNavbarOpen(!navbarOpen)}
-                        backgroundColor='white'
-                        borderColor='white'
                         padding='0px'
                     >
                         <Squash
                             color='black'
-                            backgroundColor='#fafafa'
                             toggled={navbarOpen}
                             label="Show menu"
                             size={16}
@@ -64,8 +58,6 @@ export const NavBar = () => {
                             justifyContent={['flex-start', 'center']}
                             direction={['column', 'row']}
                         >
-                            <Box borderLeft={['0', '1px']} borderColor='lightgray'></Box>
-
                             {navData.map((data) => (
                                 <NavigationLink key={data.name} name={data.name} to={data.to} active={router.pathname} setActive={linkPressed} />
                             ))}

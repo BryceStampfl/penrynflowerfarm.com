@@ -1,7 +1,10 @@
-import { Box, Center, Flex } from '@chakra-ui/react'
+import { Box, Center, Flex, Text } from '@chakra-ui/react'
 import { Jumbotron } from '../SharedComponents/Jumbotron';
 import HomeProducts from './HomeProducts';
 import ImageWithText from './ImageWithText/ImageWithText';
+import { inter } from "@/pages/_app"
+import { ClassNames } from '@emotion/react';
+
 /*
 import JumbotronImageOverlay from '../components/Jumbotron/JumbotronImageOverlay';
 import IconWidgetTray from '@/components/IconWidgetTray'
@@ -10,19 +13,34 @@ import IconWidgetTray from '@/components/IconWidgetTray'
 export const HomePage = () => {
 
     return (
-        <Box maxWidth={['80rem']} mx={['0', 'auto']}>
-            <Center>
-                <Box maxWidth='80rem' >
-                    <Jumbotron />
-                    <Flex flexDir={['column', 'row']} maxW='80rem' gap={'1rem'}>
-                        <ImageWithText url='/HomePage/ImageOne.jpg' text='Explore Flowers' link='/flowers/page' />
-                        <ImageWithText url='/HomePage/ImageThree.jpg' text='Subscription & Gift Cards' link='/subscription/page' />
-                        <ImageWithText url='/HomePage/ImageTwo.jpg' text='Contact' link='/about/page' />
+        <Box mx={['0', 'auto']}>
 
-                    </Flex>
-                    <HomeProducts />
+            <Center>
+                <Box>
+                    <Jumbotron />
+                    <Box >
+                        <Box>
+                            <Flex justifyContent={'center'}
+
+                            >
+                                <Text
+                                    className={inter.className}
+                                    fontSize={'2rem'}
+                                >New Arrivals</Text>
+
+                            </Flex>
+                        </Box>
+                        <Flex flexDir={['column', 'row']} maxW='80rem' gap={'1rem'}>
+                            {/* <ImageWithText url='/HomePage/ImageOne.jpg' text='Explore Flowers' link='/flowers/page' />
+                            <ImageWithText url='/HomePage/ImageThree.jpg' text='Subscription & Gift Cards' link='/subscription/page' />
+                            <ImageWithText url='/HomePage/ImageTwo.jpg' text='Contact' link='/about/page' /> */}
+
+                        </Flex>
+                        <HomeProducts />
+                    </Box>
                 </Box>
             </Center>
+
         </Box >
     )
 

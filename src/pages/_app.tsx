@@ -15,6 +15,7 @@ import Contact from '@/components/SharedComponents/Contact';
 import { Logo } from '@/components/SharedComponents/Logo'
 import { NavBar } from '@/components/SharedComponents/NavBar'
 
+import { Color } from '@/Styles/BaseStyle'
 
 
 Amplify.configure(awsconfig);
@@ -86,7 +87,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <>
             <ChakraProvider>
                 <main className={RobotoFont.className}>
-                    <Box backgroundColor={'#fafafa'} >
+                    <Box minHeight={'100vh'} backgroundColor={Color.background}>
                         <Logo />
                         <NavBar />
                         <DataContext.Provider value={productData}>
