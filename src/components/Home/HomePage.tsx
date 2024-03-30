@@ -1,28 +1,21 @@
-import { Box, Center, Flex, Text } from '@chakra-ui/react'
+import { Box, Center, Flex, Text, AspectRatio } from '@chakra-ui/react'
 import { Jumbotron } from '../SharedComponents/Jumbotron';
 import HomeProducts from './HomeProducts';
-import ImageWithText from './ImageWithText/ImageWithText';
 import { inter } from "@/pages/_app"
-import { ClassNames } from '@emotion/react';
 
-/*
-import JumbotronImageOverlay from '../components/Jumbotron/JumbotronImageOverlay';
-import IconWidgetTray from '@/components/IconWidgetTray'
-*/
+import ReactPlayer from 'react-player'
+import Video1 from '../../../public/HomePage/Video1.mp4';
 
 export const HomePage = () => {
 
     return (
         <Box mx={['0', 'auto']}>
-
             <Center>
                 <Box>
                     <Jumbotron />
-                    <Box >
+                    <Box p='1rem'>
                         <Box>
-                            <Flex justifyContent={'center'}
-
-                            >
+                            <Flex justifyContent={'center'}>
                                 <Text
                                     className={inter.className}
                                     fontSize={'2rem'}
@@ -37,6 +30,22 @@ export const HomePage = () => {
 
                         </Flex>
                         <HomeProducts />
+
+                        <Flex>
+                            <ReactPlayer
+                                url={'HomePage/Video1.mp4'}
+                                width={'50%'}
+                                controls={true}
+                            />
+                            <ReactPlayer
+                                url={'HomePage/Video2.mp4'}
+                                width={'50%'}
+                                controls={true}
+                            />
+                        </Flex>
+
+
+
                     </Box>
                 </Box>
             </Center>

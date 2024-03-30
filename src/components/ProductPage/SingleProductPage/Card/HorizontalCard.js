@@ -1,16 +1,15 @@
-import { Card, Stack, Image, CardBody, Flex, CardFooter, Button, Text, Center } from "@chakra-ui/react"
+import { Card, Stack, Image, CardBody, Flex, CardFooter, Button, Text, Box } from "@chakra-ui/react"
 import Link from "next/link"
-
+import { Color } from '@/Styles/BaseStyle'
 
 const HorizontalCard = ({ title, src, description }) => {
 
     const flowerName = ''
     return (
         <Card
-            borderRadius={'0px'}
-            border={'1px'}
+
             borderColor={'black'}
-            // backgroundColor={'#fafafa'}
+            backgroundColor={Color.background}
             // maxW={'80rem'}
 
             width={['auto', 'auto', 'auto', 'auto', '80rem']}
@@ -21,13 +20,14 @@ const HorizontalCard = ({ title, src, description }) => {
         >
             <Link href={`/flowers/${flowerName}/page`}>
 
-                <Image
-                    boxSize={['auto', '20rem']}
-                    objectFit='cover'
-                    maxW={{ base: '100%' }}
-                    src={src}
-                    alt={title}
-                />
+                <Box maxW={'40rem'}>
+                    <Image
+                        objectFit='cover'
+                        maxW={{ base: '100%' }}
+                        src={src}
+                        alt={title}
+                    />
+                </Box>
             </Link>
 
             <Stack>
