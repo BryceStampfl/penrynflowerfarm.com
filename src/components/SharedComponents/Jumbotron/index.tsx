@@ -1,6 +1,6 @@
 
 import { Image, Box, Center } from "@chakra-ui/react"
-import Jumbo from '../../../../public/NewBanner.jpg'
+import Jumbo from '../../../../public/Banner/NewBanner.jpg'
 
 
 export const Jumbotron = () => {

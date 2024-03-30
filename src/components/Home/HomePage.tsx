@@ -3,8 +3,9 @@ import { Jumbotron } from '../SharedComponents/Jumbotron';
 import HomeProducts from './HomeProducts';
 import { inter } from "@/pages/_app"
 
-import ReactPlayer from 'react-player'
-import Video1 from '../../../public/HomePage/Video1.mp4';
+import dynamic from 'next/dynamic'
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+
 
 export const HomePage = () => {
 
