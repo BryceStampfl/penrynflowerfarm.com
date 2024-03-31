@@ -11,7 +11,6 @@ const Contact = () => {
             width={['auto', '80rem']}
             mt='1rem'
             maxW='80rem'
-            p1='1rem'
             // left={0}
             // right={0}
             // position={['relative', 'absolute']}
