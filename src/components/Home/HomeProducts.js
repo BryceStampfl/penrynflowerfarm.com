@@ -20,11 +20,13 @@ const HomeProducts = () => {
         <>
             <Box textAlign={'center'} mx='auto' >
 
-                <Flex gap={'2rem'} justifyContent={'center'}>
+
+                <Flex id='FLEXHOME' flexDirection={['column', 'row']} gap={['auto', '2rem']} justifyContent={'center'}>
                     {concatData.map((product) => {
                         return <HomeCard key={product.name} title={product.name} src={product.imageUrl} description={product.description} />
                     })}
                 </Flex >
+
 
                 <Link href={'/flowers/page'}>
                     <Button mt='1rem'
