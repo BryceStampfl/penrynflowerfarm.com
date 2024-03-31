@@ -8,13 +8,8 @@ const Contact = () => {
 
     return (
         <Box mx='auto'
-            width={['auto', '80rem']}
+            width={['auto']}
             mt='1rem'
-            maxW='80rem'
-            // left={0}
-            // right={0}
-            // position={['relative', 'absolute']}
-            // bottom={[0]}
             backgroundColor={Color.background}
         >
             <Flex flexDir='column' justifyContent={'center'}>
