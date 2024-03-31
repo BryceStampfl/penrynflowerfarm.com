@@ -45,7 +45,6 @@ export const ProductCard = ({ product }) => {
                     <Stack spacing='0' className={inter.className} >
                         <Text
                             textAlign={'center'}
-                            maxW={'15rem'}
                             fontSize={'1.5rem'}
                             fontWeight={'normal'}
                             color={'black'}
